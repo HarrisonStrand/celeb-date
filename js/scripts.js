@@ -12,17 +12,22 @@ $(document).ready(function() {
     
     const result = yourType + night + generation;
     
+    
+    
+    
+    
+    if (result < 5) {
+      $("#shadow").show()
+    } else if (result >= 5 && result < 8) {
+      $("#sassy").show()
+    } else {
+      $("#chance").show()
+      
+    }
+    
     console.log(result);
     
     
-    
-    
-    
-    
-    
-    if (result < 5 >=3) {
-      $("#shadow").show();
-    }    
-    event.preventDefault();
+  event.preventDefault();
   });
 });

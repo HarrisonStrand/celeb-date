@@ -13,6 +13,6 @@ text-align: center;
 button {
   text-align: center;
 }
-#shadow {
+#shadow, #sassy, #chance {
   display: none;
 }
