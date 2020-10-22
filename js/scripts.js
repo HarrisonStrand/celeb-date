@@ -1,13 +1,15 @@
+const yourTypeStr = $("input:radio[name=your-type]:checked").val();
+const yourType = parseInt(yourTypeStr);
 
-  
-  const yourtype = parseInt($("input:radio[name=your-type]:checked").val());
-  
-  const night = parsInt($("input:radio[name=night]:checked").val());
-  
-  const generation = parsInt($("input:radio[name=generation]:checked").val());
+const nightStr = $("input:radio[name=night]:checked").val();
+const night = parseInt(nightStr);
+
+const generationStr = $("input:radio[name=generation]:checked").val();
+const generation = parseInt(generationStr);
   
 $(document).ready(function() {
-  $("button#rubmiteen").click(function(
-    $("body").addClass("container");
+  $("button#submit").click(function() {
+    const result = yourType + night + generation;
+    console.log(result);
   });
-});  
+});
