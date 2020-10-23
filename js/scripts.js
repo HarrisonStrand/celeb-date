@@ -18,9 +18,15 @@ $(document).ready(function() {
     
     if (result < 5) {
       $("#shadow").show()
+      $("#sassy").hide()
+      $("#chance").hide()
     } else if (result >= 5 && result < 8) {
+      $("#shadow").hide()
       $("#sassy").show()
+      $("#chance").hide()
     } else {
+      $("#sassy").hide()
+      $("#shadow").hide()
       $("#chance").show()
       
     }
